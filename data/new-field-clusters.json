@@ -1,0 +1,251 @@
+[{
+    "#": "1",
+    "light birds": "28",
+    "total birds": "36",
+    "superregion": "LP",
+    "%dark": "0.2222222222",
+    "darkbirds": "8",
+    "Y": "-24.28",
+    "X": "28.05",
+    "site/cluster": "LP Grp 1"
+}, {
+    "#": "2",
+    "light birds": "25",
+    "total birds": "28",
+    "superregion": "MP",
+    "%dark": "10.71428571",
+    "darkbirds": "3",
+    "Y": "-25.510604",
+    "X": "30.75749",
+    "site/cluster": "MP Grp1"
+}, {
+    "#": "3",
+    "light birds": "18",
+    "total birds": "18",
+    "superregion": "MP",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-25.14",
+    "X": "29.67",
+    "site/cluster": "MP Grp 2"
+}, {
+    "#": "4",
+    "light birds": "30",
+    "total birds": "39",
+    "superregion": "KZN",
+    "%dark": "23.07692308",
+    "darkbirds": "9",
+    "Y": "-29.02",
+    "X": "30.78",
+    "site/cluster": "KZN Grp 1"
+}, {
+    "#": "5",
+    "light birds": "5",
+    "total birds": "6",
+    "superregion": "KZN",
+    "%dark": "16.66666667",
+    "darkbirds": "1",
+    "Y": "-29.02",
+    "X": "30.12",
+    "site/cluster": "KZN Grp 2"
+}, {
+    "#": "6",
+    "light birds": "37",
+    "total birds": "50",
+    "superregion": "KZN",
+    "%dark": "26",
+    "darkbirds": "13",
+    "Y": "-30.05",
+    "X": "31.08",
+    "site/cluster": "KZN Grp 3"
+}, {
+    "#": "7",
+    "light birds": "12",
+    "total birds": "17",
+    "superregion": "KZN",
+    "%dark": "29.41176471",
+    "darkbirds": "5",
+    "Y": "-29.995",
+    "X": "29.75",
+    "site/cluster": "KZN Grp 4"
+}, {
+    "#": "8",
+    "light birds": "2",
+    "total birds": "2",
+    "superregion": "KZN",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-30.95",
+    "X": "30.33",
+    "site/cluster": "KZN Grp 5"
+}, {
+    "#": "9",
+    "light birds": "4",
+    "total birds": "5",
+    "superregion": "KZN",
+    "%dark": "20",
+    "darkbirds": "1",
+    "Y": "-27.382656",
+    "X": "32.44228",
+    "site/cluster": "KZN North"
+}, {
+    "#": "10",
+    "light birds": "2",
+    "total birds": "2",
+    "superregion": "FS",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-29.54",
+    "X": "27.15",
+    "site/cluster": "FS Grp 1"
+}, {
+    "#": "11",
+    "light birds": "8",
+    "total birds": "8",
+    "superregion": "FS",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-29.01",
+    "X": "26.21",
+    "site/cluster": "FS Grp 2"
+}, {
+    "#": "12",
+    "light birds": "2",
+    "total birds": "2",
+    "superregion": "GP",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-26.68",
+    "X": "27.94",
+    "site/cluster": "GP Grp 1"
+}, {
+    "#": "13",
+    "light birds": "5",
+    "total birds": "5",
+    "superregion": "GP",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-24.87",
+    "X": "28.38",
+    "site/cluster": "GP Grp 2"
+}, {
+    "#": "14",
+    "light birds": "40",
+    "total birds": "44",
+    "superregion": "GP",
+    "%dark": "9.090909091",
+    "darkbirds": "4",
+    "Y": "-25.65",
+    "X": "28.14",
+    "site/cluster": "GP Grp 3"
+}, {
+    "#": "15",
+    "light birds": "4",
+    "total birds": "4",
+    "superregion": "GP",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-25.95",
+    "X": "27.17",
+    "site/cluster": "GP Grp 4"
+}, {
+    "#": "16",
+    "light birds": "2",
+    "total birds": "2",
+    "superregion": "EC",
+    "%dark": "0",
+    "darkbirds": "0",
+    "Y": "-32.09",
+    "X": "28.85",
+    "site/cluster": "EC Grp 1"
+}, {
+    "#": "17",
+    "light birds": "0",
+    "total birds": "3",
+    "superregion": "EC",
+    "%dark": "100",
+    "darkbirds": "3",
+    "Y": "-31.12",
+    "X": "32.09",
+    "site/cluster": "EC Grp 2"
+}, {
+    "#": "18",
+    "light birds": "14",
+    "total birds": "29",
+    "superregion": "EC",
+    "%dark": "51.72413793",
+    "darkbirds": "15",
+    "Y": "-33.95",
+    "X": "25.6",
+    "site/cluster": "EC Grp 3"
+}, {
+    "#": "19",
+    "light birds": "1",
+    "total birds": "4",
+    "superregion": "EC",
+    "%dark": "75",
+    "darkbirds": "3",
+    "Y": "-32.32",
+    "X": "26.9",
+    "site/cluster": "EC Grp 4"
+}, {
+    "#": "20",
+    "light birds": "15",
+    "total birds": "80",
+    "superregion": "WC",
+    "%dark": "81.25",
+    "darkbirds": "65",
+    "Y": "-33.98",
+    "X": "18.43",
+    "site/cluster": "WC Grp 1"
+}, {
+    "#": "21",
+    "light birds": "7",
+    "total birds": "19",
+    "superregion": "WC",
+    "%dark": "63.15789474",
+    "darkbirds": "12",
+    "Y": "-34.41",
+    "X": "19.15",
+    "site/cluster": "WC Grp 2"
+}, {
+    "#": "22",
+    "light birds": "3",
+    "total birds": "7",
+    "superregion": "WC",
+    "%dark": "57.14285714",
+    "darkbirds": "4",
+    "Y": "-34.13",
+    "X": "20.25",
+    "site/cluster": "WC Grp 3"
+}, {
+    "#": "23",
+    "light birds": "5",
+    "total birds": "13",
+    "superregion": "WC",
+    "%dark": "61.53846154",
+    "darkbirds": "8",
+    "Y": "-33.49",
+    "X": "21.89",
+    "site/cluster": "WC Grp 4"
+}, {
+    "#": "24",
+    "light birds": "0",
+    "total birds": "1",
+    "superregion": "WC",
+    "%dark": "100",
+    "darkbirds": "1",
+    "Y": "-33.28",
+    "X": "18.28",
+    "site/cluster": "WC Grp 5"
+}, {
+    "#": "",
+    "light birds": "269",
+    "total birds": "424",
+    "superregion": "",
+    "%dark": "36.55660377",
+    "darkbirds": "155",
+    "Y": "TOTAL",
+    "X": "",
+    "site/cluster": ""
+}]

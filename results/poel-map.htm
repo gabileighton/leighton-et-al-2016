@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Ground Overlays</title>
+    <style>
+        html,
+        body,
+        #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing"></script>
+    <script>
+        // This example uses a GroundOverlay to place an image on the map
+        // showing an antique map of Newark, NJ.
+
+        var historicalOverlay;
+
+        function initialize() {
+            var newark = new google.maps.LatLng(58.99531118795094, 17.75390625);
+            var imageBounds = new google.maps.LatLngBounds(
+                // Bottom left.
+                new google.maps.LatLng(33.4292631019727, -11.2005615234375),
+                // Top right.
+                new google.maps.LatLng(71.86990857540745, 35.10950458932484));
+
+            var mapOptions = {
+                zoom: 5,
+                center: newark
+            };
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+
+            // Define a rectangle and set its editable property to true.
+            // var rectangle = new google.maps.Rectangle({
+            //     bounds: imageBounds,
+            //     editable: true
+            // });
+
+            // rectangle.setMap(map);
+
+            historicalOverlay = null;
+
+            if (historicalOverlay) {
+                historicalOverlay.setMap(null);
+            }
+            historicalOverlay = new google.maps.GroundOverlay(
+                'poel-cropped.jpg',
+                imageBounds);
+            historicalOverlay.setMap(map);
+            historicalOverlay.setOpacity(1.0);
+
+
+            var drawingManager = new google.maps.drawing.DrawingManager({
+                drawingMode: google.maps.drawing.OverlayType.MARKER,
+                drawingControl: true,
+                drawingControlOptions: {
+                    position: google.maps.ControlPosition.TOP_CENTER,
+                    drawingModes: [
+                        google.maps.drawing.OverlayType.MARKER,
+                        google.maps.drawing.OverlayType.CIRCLE,
+                        google.maps.drawing.OverlayType.POLYGON,
+                        google.maps.drawing.OverlayType.POLYLINE,
+                        google.maps.drawing.OverlayType.RECTANGLE
+                    ]
+                },
+                markerOptions: {
+                    icon: 'images/beachflag.png'
+                },
+                circleOptions: {
+                    fillColor: '#ffff00',
+                    fillOpacity: 1,
+                    strokeWeight: 5,
+                    clickable: false,
+                    editable: true,
+                    zIndex: 1
+                }
+            });
+            drawingManager.setMap(map);
+
+
+            // Define the LatLng coordinates for the polygon's path.
+            var triangleCoords = [
+                new google.maps.LatLng(25.774252, -80.190262),
+                new google.maps.LatLng(18.466465, -66.118292),
+                new google.maps.LatLng(32.321384, -64.75737),
+                new google.maps.LatLng(25.774252, -80.190262)
+            ];
+
+            // Construct the polygon.
+            bermudaTriangle = new google.maps.Polygon({
+                paths: triangleCoords,
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                editable: true
+            });
+
+            bermudaTriangle.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <div id="map-canvas"></div>
+</body>
+
+</html>

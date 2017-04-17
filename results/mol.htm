@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Polygon Auto-completion</title>
+    <style>
+        html,
+        body,
+        #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+        // This example creates a simple polygon representing the Bermuda Triangle.
+        // Note that the code specifies only three LatLng coordinates for the
+        // polygon. The API automatically draws a
+        // stroke connecting the last LatLng back to the first LatLng.
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 5,
+                center: new google.maps.LatLng(24.886436490787712, -70.2685546875),
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+
+            var bermudaTriangle;
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+
+            // Define the LatLng coordinates for the polygon's path. Note that there's
+            // no need to specify the final coordinates to complete the polygon, because
+            // The Google Maps JavaScript API will automatically draw the closing side.
+            var triangleCoords = [
+                // First.
+                new google.maps.LatLng(50.87531, -7.25098),
+                new google.maps.LatLng(53.94604, -4.39917),
+                new google.maps.LatLng(55.07064, -5.53824),
+                new google.maps.LatLng(55.58349, -5.4638),
+                new google.maps.LatLng(55.98521, -4.82233),
+                new google.maps.LatLng(56.83318, -4.26539),
+                new google.maps.LatLng(57.35693, -4.8878),
+                new google.maps.LatLng(58.32142, -3.92829),
+                // new google.maps.LatLng(58.55683, -1.69437),
+                // new google.maps.LatLng(57.50925, 7.51958),
+                // new google.maps.LatLng(50.51343, -0.64819),
+                // new google.maps.LatLng(58.3902, -4.2627),
+
+                // Next
+                new google.maps.LatLng(58.71085, -3.75467),
+                new google.maps.LatLng(58.66551, -2.65869),
+                new google.maps.LatLng(55.03747, 7.47345),
+                new google.maps.LatLng(55.03432, 8.46497),
+                new google.maps.LatLng(55.01464, 9.95911),
+                new google.maps.LatLng(54.54299, 10.91217),
+                new google.maps.LatLng(53.98173, 11.32278),
+                new google.maps.LatLng(53.2552, 11.60946),
+                new google.maps.LatLng(51.97801, 11.72035),
+                new google.maps.LatLng(50.62153, 14.00654),
+                new google.maps.LatLng(50.02712, 13.36985),
+                new google.maps.LatLng(49.55638, 13.27123),
+                new google.maps.LatLng(49.12556, 13.90307),
+                new google.maps.LatLng(48.6481, 15.57031),
+                new google.maps.LatLng(48.26891, 16.01941),
+                new google.maps.LatLng(48.0048, 16.17804),
+                new google.maps.LatLng(47.75418, 16.03763),
+                new google.maps.LatLng(47.04771, 15.56093),
+                new google.maps.LatLng(46.95403, 13.85041),
+                new google.maps.LatLng(46.364, 13.6763),
+                new google.maps.LatLng(46.15796, 13.11684),
+                new google.maps.LatLng(46.06228, 11.90327),
+                new google.maps.LatLng(45.86157, 11.06577),
+                new google.maps.LatLng(46.10478, 10.15264),
+                new google.maps.LatLng(46.13471, 9.5093),
+                new google.maps.LatLng(46.30167, 8.98988),
+                new google.maps.LatLng(45.82128, 7.91718),
+                new google.maps.LatLng(45.63331, 7.31491),
+                new google.maps.LatLng(44.87342, 7.09068),
+                new google.maps.LatLng(44.16745, 7.7586),
+                new google.maps.LatLng(38.22092, 2.09839),
+                new google.maps.LatLng(33.43895, -12.66067),
+                new google.maps.LatLng(47.77928, -11.01051),
+                new google.maps.LatLng(50.18186, -6.88953),
+                // new google.maps.LatLng(54.49149, -15.97257),
+            ];
+
+            bermudaTriangle = new google.maps.Polygon({
+                paths: triangleCoords,
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 3,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35
+            });
+
+            bermudaTriangle.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <div id="map-canvas"></div>
+</body>
+
+</html>
